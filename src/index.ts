@@ -9,7 +9,8 @@ export class CdkEcsBugStack extends Stack {
 
     new Cluster(this, 'Cluster', {
       containerInsights: true,
-      // Deploy once then uncomment the below code and deploy again
+      // https://github.com/aws/aws-cdk/issues/17739
+      // Deploy once then uncomment the code below and deploy again
       // executeCommandConfiguration: {
       //   logging: ExecuteCommandLogging.OVERRIDE,
       //   logConfiguration: {
