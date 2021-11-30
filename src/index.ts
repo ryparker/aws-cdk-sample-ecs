@@ -9,12 +9,13 @@ export class CdkEcsBugStack extends Stack {
 
     new Cluster(this, 'Cluster', {
       containerInsights: true,
-      executeCommandConfiguration: {
-        logging: ExecuteCommandLogging.OVERRIDE,
-        logConfiguration: {
-          cloudWatchLogGroup: new LogGroup(this, 'LogGroup'),
-        }
-      },
+      // Deploy once then uncomment the below code and deploy again
+      // executeCommandConfiguration: {
+      //   logging: ExecuteCommandLogging.OVERRIDE,
+      //   logConfiguration: {
+      //     cloudWatchLogGroup: new LogGroup(this, 'LogGroup'),
+      //   }
+      // },
     });
   }
 }
