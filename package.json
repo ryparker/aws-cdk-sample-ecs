@@ -15,7 +15,7 @@
     "destroy": "cdk destroy"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.0.0-rc.30"
+    "aws-cdk-lib": "2.0.0-rc.33"
   },
   "devDependencies": {
     "aws-cdk": "2.0.0-rc.30",
